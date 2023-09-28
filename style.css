@@ -1,0 +1,143 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  /* Main Style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  /* Start Button */
+.start-button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(51 51 51 / 60%);
+    z-index: 2;
+}
+.start-button span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff8a18;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    user-select: none !important;
+}
+
+  /* Game Style */
+.memory-game {
+    max-width: 1179px;
+    margin: 50px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.memory-game .info {
+    background-color: #f6f6f6;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid #2196f3;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.memory-game .name span {
+    color: #2196F3;
+}
+.memory-game .best-score .name {
+    color: #2196F3;
+}
+.memory-game .best-score .best {
+    color: red;
+}
+.memory-game .tries span {
+    color: red;
+}
+.memory-game .blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.memory-game .blocks.unclickable {
+    pointer-events: none;
+}
+.memory-game .block {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 50px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.memory-game .block.fliped,
+.memory-game .block.done {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.memory-game .back img {
+    width: 70%; 
+    height: 145px; 
+    margin-top: 20px; 
+}
+.memory-game .block > div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 5px solid #2196F3;
+}
+.memory-game .front {
+    background-color: #333;
+    line-height: 200px;
+}
+.memory-game .front::before {
+    content: "!";
+    position: absolute;
+    color: #fff;
+    font-size: 120px;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.memory-game .back {
+    background-color: #0000002b;
+    transform: rotateY(180deg);
+}
+.memory-game .back img {
+    width: 160px;
+    margin-top: 40px;
+}
+
+#reset-button {
+    background-color: #3498db; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 700px;
+    margin-bottom: 50px;
+}
+
+#reset-button:hover {
+    background-color: #2980b9; 
+}

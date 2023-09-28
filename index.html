@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="start-button">
+        <span>Start Game</span>
+    </div>
+    <div class="memory-game">
+        <div class="info">
+            <div class="name">Hello
+                <span></span>
+            </div>
+            <div class="best-score">
+                Less Wrong Tries =>
+                <span class="name"></span>
+                <span class="best"></span>
+            </div>
+            <div class="tries">Wrong Tries : 
+                <span>0</span>
+            </div>
+        </div>
+        <div class="blocks">
+            <div class="block" data-brand="c++">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/c-.png" alt="c++">
+                </div>
+            </div>
+            <div class="block" data-brand="c++">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/c-.png" alt="c++">
+                </div>
+            </div>
+            <div class="block" data-brand="css">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/css-3.png" alt="css">
+                </div>
+            </div>
+            <div class="block" data-brand="css">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/css-3.png" alt="css">
+                </div>
+            </div>
+            <div class="block" data-brand="github">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/github.png" alt="github">
+                </div>
+            </div>
+            <div class="block" data-brand="github">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/github.png" alt="github">
+                </div>
+            </div>
+            <div class="block" data-brand="html">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/html-5.png" alt="html">
+                </div>
+            </div>
+            <div class="block" data-brand="html">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/html-5.png" alt="html">
+                </div>
+            </div>
+            <div class="block" data-brand="linkedin">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/linkedin.png" alt="linkedin">
+                </div>
+            </div>
+            <div class="block" data-brand="linkedin">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/linkedin.png" alt="linkedin">
+                </div>
+            </div>
+            <div class="block" data-brand="python">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/python.png" alt="python">
+                </div>
+            </div>
+            <div class="block" data-brand="python">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/python.png" alt="python">
+                </div>
+            </div>
+            <div class="block" data-brand="react">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/react.png" alt="react">
+                </div>
+            </div>
+            <div class="block" data-brand="react">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/react.png" alt="react">
+                </div>
+            </div>
+            <div class="block" data-brand="sql-server">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/sql-server.png" alt="sql-server">
+                </div>
+            </div>
+            <div class="block" data-brand="sql-server">
+                <div class="front"></div>
+                <div class="back">
+                    <img src="imgs/sql-server.png" alt="sql-server">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="success" src="audio/succes.wav" preload="auto"></audio>
+    <audio id="fail" src="audio/lose.wav" preload="auto"></audio>
+    <audio id="win" src="audio/win.wav" preload="auto"></audio>
+
+    <button id="reset-button">Restart Game</button>
+    <script src="index.js"></script>
+</body>
+</html>
